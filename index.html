@@ -24,8 +24,14 @@
         .panel-header {
             display: flex;
             align-items: center;
+            justify-content: space-between;
             gap: 12px;
             margin-bottom: 18px;
+        }
+        .panel-header-left {
+            display: flex;
+            align-items: center;
+            gap: 12px;
         }
         .panel-header img {
             width: 48px;
@@ -38,6 +44,22 @@
             margin: 0;
             font-weight: 700;
             letter-spacing: 1px;
+        }
+        .add-bot-btn {
+            background: #11883f;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            padding: 12px 20px;
+            font-size: 1em;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .add-bot-btn:hover {
+            background: #0099cc;
         }
         .panel-section {
             margin-bottom: 22px;
@@ -118,8 +140,11 @@
 <body>
     <div class="panel-container">
         <div class="panel-header">
-            <img src="https://cdn-icons-png.flaticon.com/256/3732/3732978.png" alt="Bot Avatar" onerror="this.src='https://cdn-icons-png.flaticon.com/256/3732/3732978.png">
-            <h1>Backuper <span class="premium-badge" id="premium-badge" style="display:none;">Premium</span></h1>
+            <div class="panel-header-left">
+                <img src="https://cdn-icons-png.flaticon.com/256/3732/3732978.png" alt="Bot Avatar" onerror="this.src='https://cdn-icons-png.flaticon.com/256/3732/3732978.png">
+                <h1>Backuper <span class="premium-badge" id="premium-badge" style="display:none;">Premium</span></h1>
+            </div>
+            <a class="add-bot-btn" href="https://discord.com/oauth2/authorize?client_id=1378792438172483606&permissions=8&integration_type=0&scope=bot" target="_blank">Añadir bot</a>
         </div>
         <div class="panel-section">
             <h2>Acciones rápidas</h2>
